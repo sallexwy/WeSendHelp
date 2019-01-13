@@ -10,3 +10,5 @@ This is a website:
 TODO:
 - Button / Popup
 - More relevant articles
+
+permalink: /index.html
