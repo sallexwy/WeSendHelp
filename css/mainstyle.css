@@ -1,5 +1,19 @@
+html {
+	background: Honeydew;
+}
 .slogan {
+	display: absolute;
 	text-align: center;
+	font-size: 30px;
+	font-family: Merriweather;
+
+}
+
+.titleAndSlogan {
+  background-color: rgba(255, 255, 255, 0.5);
+	padding: 10px, 0px;
+	margin: 20px, 0px;
+	color: slategrey;
 }
 
 #search-box {
@@ -12,6 +26,41 @@
 
 .post-content{
 	left:20%;
-	right:10%;	
+	right:10%;
 	width: 80%;
+}
+
+.bigTitle{
+	display: absolute;
+	color: slategray;
+	font-size: 60px;
+	text-align: center;
+	font-family: Merriweather;
+}
+
+#hit-content{
+	background-color:#cdcdcd;
+	padding: 13px;
+	margin: 10px;
+	border-radius: 8px;
+	border-width: 3px;
+	border-style: solid;
+	border-color: slategrey;
+	font-family:Merriweather;
+}
+
+.sloganPic{
+	margin:0;
+	padding:0;
+	display: relative;
+	background-image: url("../images/niceppl.jpg");
+	background-size: 100% 172%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 308px;
+}
+
+#input-container{
+	align: center;
+	background-color: #b4b4b4;
 }
