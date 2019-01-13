@@ -35,6 +35,30 @@
 		<div id="pagination"></div>
 	</main>
 
+
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+
+	<!-- Modal content -->
+	<div class="modal-content">
+		<span onclick='yeeter()' class="close">&times;</span>
+		<h1>Send Message</h1>
+		<form action="/action_page.php">
+			To:<br>
+			<input type="text" name="firstname" value="IcyQuantity2">
+			<br><br>
+			Your Name:<br>
+			<input type="text" name="lastname" value="Bob">
+			<br><br>
+			<textarea rows="4" cols="50" name="comment" form="usrform">Enter text here...
+					</textarea>
+			<br>
+			<input type="submit" value="Submit">
+		</form> 
+		
+	</div>
+	</div>
+
 	<script type="text/html" id="hit-template">
 		<div class="hit">
 			<div id="hit-content">
@@ -42,13 +66,13 @@
 					<h4 class="hit-user">Username: {{{_highlightResult.user.value}}}</h4>
 					<div class="post-content">
 						<h3 class="hit-text">{{{_highlightResult.text.value}}}</h3>
-						<button class ="button but">Send Help to User</button>
-						<button class="button but" onclick="window.location.href='{{{_highlightResult.url.value}}}';">See Original Post</button>
+						<button class ="button but" onclick="popup()">Send Message</button>
+						<button class="button but" onclick="window.open('{{{_highlightResult.url.value}}}');">See Original Post</button>
 					</div>
 				</div>
 
 				</div>
-			</div>
+		
 		</script>
 
 		<div class id = "about">
@@ -60,6 +84,8 @@
 					through hardships, and you can contact the original poster ways they
 					can reach out to you with. We provide you with search engine that
 					allows you to furthur specify your search. </p>
+
+		</div>
 		<div class id="contact">
 			<h2>Contact Us</h2>
 			<p>123 Starterhacks Rd, Waterloo, ON, N2L 1A0</p>
@@ -72,4 +98,5 @@
 	<script src="https://cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4"></script>
 	<script src="main.js"></script>
+	<script src="index.js"></script>
 	</html>
