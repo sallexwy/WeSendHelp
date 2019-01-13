@@ -1,9 +1,46 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" href = "style/mainstyle.css">
-	</head>
+<head>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.css">
+	<link rel="stylesheet" href = "css/mainstyle.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css">
 
-	<body>
+	<title>WeSendHelp</title>
+</head>
+
+<body>
+	<header>
+		<div class = "slogan">
+			<h1>This website sends help please change this slogan it sucks right now</h1>
+		</div>
+		<div id="input-container">
+			<input id="search-input" placeholder="search for issues here">
+		</div>
+	</header>
+
+	<main>
+		<div id="hits"></div>
+		<div id="pagination"></div>
+	</main>
+
+	<script type="text/html" id="hit-template">
+		<div class="hit">
+			<div id="hit-content">
+				<h2 class="hit-title">Post Title: {{{_highlightResult.title.value}}}</h1>
+					<h4 class="hit-user">Username: {{{_highlightResult.user.value}}}</h4>
+					<div class="post-content">
+						<h3 class="hit-text">{{{_highlightResult.text.value}}}</h3>
+					</div>
+				</div>
+
+				</div>
+			</div>
+		</script>
+
 	</body>
-</html>
+
+	<script src="https://cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4"></script>
+	<script src="main.js"></script>
+	</html>
