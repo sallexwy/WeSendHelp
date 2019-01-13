@@ -191,3 +191,28 @@ button {
 	cursor: pointer;
   }
 
+  #about {
+	background-color:honeydew;
+	padding: 13px;
+	border-radius:5px;
+	border-width: 7px;
+	border-style: dotted;
+	border-color: rosybrown;
+	font-family:Merriweather;
+	margin: 10px;
+	color: #4b3939;
+	text-align: center;
+  }
+
+  #contact {
+	background-color:honeydew;
+	padding: 13px;
+	border-radius:5px;
+	border-width: 7px;
+	border-style: dotted;
+	border-color: rosybrown;
+	font-family:Merriweather;
+	margin: 10px;
+	color: #4b3939;
+	text-align: center;
+  }
