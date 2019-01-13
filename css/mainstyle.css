@@ -1,19 +1,19 @@
 html {
 	background: Honeydew;
 }
+
 .slogan {
 	display: absolute;
 	text-align: center;
 	font-size: 30px;
 	font-family: Merriweather;
-
 }
 
 .titleAndSlogan {
   background-color: rgba(255, 255, 255, 0.5);
 	padding: 10px, 0px;
 	margin: 20px, 0px;
-	color: slategrey;
+	color: slategray;
 }
 
 #search-box {
@@ -32,7 +32,7 @@ html {
 
 .bigTitle{
 	display: absolute;
-	color: slategray;
+	color: #967272;
 	font-size: 60px;
 	text-align: center;
 	font-family: Merriweather;
@@ -41,12 +41,15 @@ html {
 #hit-content{
 	background-color:#cdcdcd;
 	padding: 13px;
-	margin: 10px;
-	border-radius: 8px;
-	border-width: 3px;
-	border-style: solid;
-	border-color: slategrey;
+	border-radius:5px;
+	border-width: 7px;
+	border-style: dotted;
+	border-color: rosybrown;
 	font-family:Merriweather;
+	margin: 10px;
+	color: #4b3939;
+/*	background-color: rgba(255, 255, 255, 0.5);*/
+
 }
 
 .sloganPic{
@@ -63,4 +66,65 @@ html {
 #input-container{
 	align: center;
 	background-color: #b4b4b4;
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #b4b4b4;
+}
+
+li {
+  float: right;
+
+}
+
+
+li a {
+	transition: 0.3s ease;
+	align-self: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rosybrown;
+}
+
+.active {
+  background-color: rosybrown;
+}
+
+h2{
+	font-family: Merriweather;
+}
+
+li{
+	font-family: Merriweather;
+}
+
+button {
+	background-color: white;
+	font-family: Merriweather;
+   border-color: rosybrown;
+   color: #967272;
+   padding: 16px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+	 border-width: 5px;
+   transition-duration: 0.4s;
+   cursor: pointer;
+}
+.but:hover {
+	background-color: rosybrown;
+	color: white;
 }

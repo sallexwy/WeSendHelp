@@ -18,10 +18,17 @@
 		<div class = "slogan">Sometimes, they need help before they reach out.</div>
 	</div>
 	 </div>
+	<ul>
 		<div id="input-container">
 			<input id="search-input" placeholder="search for issues here">
+			<li><a href="#contact">Contact</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a class="active" href="#hit">Home</a></li>
 		</div>
+	</ul>
+
 	</header>
+
 
 	<main>
 		<div id="hits"></div>
@@ -35,12 +42,30 @@
 					<h4 class="hit-user">Username: {{{_highlightResult.user.value}}}</h4>
 					<div class="post-content">
 						<h3 class="hit-text">{{{_highlightResult.text.value}}}</h3>
+						<button class ="button but">Send Help to User</button>
+						<button class="button but" onclick="window.location.href='{{{_highlightResult.url.value}}}';">See Original Post</button>
 					</div>
 				</div>
 
 				</div>
 			</div>
 		</script>
+
+		<div class id = "about">
+			<h2> About Us </h2>
+				<p>At WeSendHelp, we want to encourage mental health and drug use
+				associations to reach out to the people who are seeking help through
+				posts on social media platforms such as Reddit. </p>
+				<p>We found posts that are posted by people who are potentially going
+					through hardships, and you can contact the original poster ways they
+					can reach out to you with. We provide you with search engine that
+					allows you to furthur specify your search. </p>
+		<div class id="contact">
+			<h2>Contact Us</h2>
+			<p>123 Starterhacks Rd, Waterloo, ON, N2L 1A0</p>
+			<p>+1 226 123 4567</p>
+		</div>
+
 
 	</body>
 
